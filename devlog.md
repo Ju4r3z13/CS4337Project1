@@ -22,3 +22,9 @@ I have written a prompter logic where I prompt the user for an expression and if
 I set up a flag to catch exceptions, however I am leaving space for the error handling logic which I will work later.
 I am focusing on evaluating the input now. The input is tokenized and the tokens are then taken to the function "eval-expression"
 I am deciding how will de logic of the loop works.
+
+10/23/2025 12:52 pm
+I have finished most of the main main logic, error handling was suggested by the ai assistant of the compiler but it is pretty complex to understand.
+I will try to understand the syntax otherwise I will use the methods seen in class.
+I am now missing the final error handling in main and the history handling in main which I haven't put much thought into it so far.
+I did get started on eval-expression using the string->number function to convert tokens into numerical values.
