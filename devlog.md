@@ -16,3 +16,9 @@ I also wrote a general skeleton for what my program should look like:
 4. main-loop
 5. error-handler
 6. history
+
+10/23/2025 12:22 pm
+I have written a prompter logic where I prompt the user for an expression and if the input is "quit", the program stops.
+I set up a flag to catch exceptions, however I am leaving space for the error handling logic which I will work later.
+I am focusing on evaluating the input now. The input is tokenized and the tokens are then taken to the function "eval-expression"
+I am deciding how will de logic of the loop works.
