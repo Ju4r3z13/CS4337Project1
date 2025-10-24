@@ -28,3 +28,9 @@ I have finished most of the main main logic, error handling was suggested by the
 I will try to understand the syntax otherwise I will use the methods seen in class.
 I am now missing the final error handling in main and the history handling in main which I haven't put much thought into it so far.
 I did get started on eval-expression using the string->number function to convert tokens into numerical values.
+
+10/24/2025 9:32 am (worked on 10/23/2025 11:40 pm)
+I have made progress with the eval function. I took a portion of it out of my main code and created a separate code to test it.
+I made a switch statement using "cond" to perform operations when tokens are operators. 
+I built a helper using "char-numeric?" to discriminate the tokens.
+
