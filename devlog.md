@@ -39,3 +39,8 @@ I completed the eval-expression function logic now I must test for errors.
 I also need to fix the operator logic where I made the mistake of interpreting "-" as a subtraction.
 However the project indicates it is a "unary operator that negates the value of an expression"
 So next fixes are the use of "-", implementing history, and doing error checking.
+
+10/24/2025 1:30 pm
+Still working in the history logic, it has been kind of confusing to undesrtand what I need to do with the $n part.
+I have completed all error handling in eval-expression and fixed all logic errors so far. 
+I am yet to test the entirety of the function because the carried variable "history" is not assigned anything yet.
