@@ -44,3 +44,14 @@ So next fixes are the use of "-", implementing history, and doing error checking
 Still working in the history logic, it has been kind of confusing to undesrtand what I need to do with the $n part.
 I have completed all error handling in eval-expression and fixed all logic errors so far. 
 I am yet to test the entirety of the function because the carried variable "history" is not assigned anything yet.
+
+10/24/2025 1:49 pm
+This is what the problem looks like compared to the original outline:
+1. mode function (already given)
+2. to-token (already built)
+3. eval-expression (Already built missing history reference)
+4. main-loop (In process)
+5. error-handler (REMOVED, errors now handled inside eavl-expression)
+6. history (STILL NOT BUILT)
+I have now re-read the definition of history in the project. Hee is how I will do it:
+HistoryFunction (just to distinguish it from the history list) will be a helper to eval-function, where History is a list containing previous results referenced by $n.
