@@ -55,3 +55,7 @@ This is what the problem looks like compared to the original outline:
 6. history (STILL NOT BUILT)
 I have now re-read the definition of history in the project. Hee is how I will do it:
 HistoryFunction (just to distinguish it from the history list) will be a helper to eval-function, where History is a list containing previous results referenced by $n.
+
+10/24/2025 6:17 pm
+I have finishedthe main logic and the history logic. Now I am fixing the parenthesis mismatch.
+I made two helpers for history, one to set it and one to read it.
