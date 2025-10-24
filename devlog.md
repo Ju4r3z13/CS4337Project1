@@ -34,3 +34,8 @@ I have made progress with the eval function. I took a portion of it out of my ma
 I made a switch statement using "cond" to perform operations when tokens are operators. 
 I built a helper using "char-numeric?" to discriminate the tokens.
 
+10/24/2025 10:45 am 
+I completed the eval-expression function logic now I must test for errors.
+I also need to fix the operator logic where I made the mistake of interpreting "-" as a subtraction.
+However the project indicates it is a "unary operator that negates the value of an expression"
+So next fixes are the use of "-", implementing history, and doing error checking.
