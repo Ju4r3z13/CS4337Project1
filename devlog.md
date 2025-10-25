@@ -1,3 +1,5 @@
+EDUARDO JUAREZ EXJ220003
+
 10/14/2025 2:11 pm
 I will create a prefix-notation expression calculator in Racket. 
 I will be using Racket because it is the functional programming language we have been using so far, and it is the one I am the most familiar with.
@@ -86,3 +88,5 @@ Upon reviewing the test case I realized my error was including a "-" and interpr
 
 10/24/2025 11:40 pm
 Ran into issues uploading my code to github so I had to make a file and paste the contents from my original .rkt
+
+10/24/2025 the issues are my wifi, I will upload a rough version and then a final version hopefully not past 12, I am yet to try a feature I wanted to add.
