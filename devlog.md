@@ -82,4 +82,4 @@ Error exiting the program has been fixed, issue was that I had unintentionally d
 Now there is an erro with some long nested functions.
 
 10/24/2025 10:56 pm
-Upon reviewing the test case I realized my error was including a "-" and interpreting it as a - expecting another answer. The program works fine, history has been tested to be correct. Now I will make sure I work around edge cases.
+Upon reviewing the test case I realized my error was including a "-" and interpreting it as a subtraction expecting another answer. The program works fine, history has been tested to be correct. Now I will make sure I work around edge cases.
