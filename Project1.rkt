@@ -6,10 +6,10 @@
        [(string=? (vector-ref args 0) "--batch") #f]
        [else #t])))
          
-(define (to-token line)
+(define (to-token line) ; tokenizes string
     (string-split line))
 
-(define (get-history token history)
+(define (get-history token history) ; gets history from $n reference
     (define n-str (substring token 1))
     (define n (string->number n-str))
     (if (or (= n 0) (> n (length history)))
@@ -17,7 +17,7 @@
         (displayln "Error: Invalid access to history") (void))
     (list-ref history (- (length history) n))))
     
-(define (set-history tokens history)
+(define (set-history tokens history) ; sets history record given a result from eval-expression
     (define-values (result remaining) (eval-expression tokens history))
     (if (not (null? remaining))
         (begin 
@@ -25,7 +25,7 @@
         (values (void) history))
     (values result (cons result history))))
 
-(define (eval-expression tokens history)
+(define (eval-expression tokens history) ; evaluates an expression given a tokenized list
     (if (null? tokens)
         (displayln "Error: No expression")
         (let ([curr-token (car tokens)]
@@ -50,9 +50,9 @@
                         (if (= val2 0)
                             (error "Error: Illegal division by 0")
                             (values (/ val1 val2) rest2))]))))]
-          [else (displayln "Error: Invalid input token")]))))
+          [else (displayln "Error: Invalid input token")])))) ; invalid token input
 
-(define (main-loop history)
+(define (main-loop history) ; main loop
     (when prompt? (display "Enter your prefix expression or 'quit' to exit: "))
     (let ([input (read-line)])
         (cond
