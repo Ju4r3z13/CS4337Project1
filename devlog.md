@@ -76,3 +76,7 @@ So the next fixed will be over error handling designed by me rather than actual 
 Fixed issue with unary. Error was in the recursive call expecting a list with two elements a current element and the rest of the list.
 However when using unary for single cases like "- 5".
 I have also skipped the parenthesis notation given that the function reads prefix.
+
+10/24/2025 10:53 pm
+Error exiting the program has been fixed, issue was that I had unintentionally duplicated my main function so it exited one main and then had to exit the second main function.
+Now there is an erro with some long nested functions.
