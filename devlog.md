@@ -59,3 +59,9 @@ HistoryFunction (just to distinguish it from the history list) will be a helper 
 10/24/2025 6:17 pm
 I have finishedthe main logic and the history logic. Now I am fixing the parenthesis mismatch.
 I made two helpers for history, one to set it and one to read it.
+
+10/24/2025 9:29 pm
+Ran into issues while running the code:
+- Entering "quit" doesn't exit the program until it occurs twice
+- Errors in the parsing of the string
+- eval-expression had errors in syntax where a condition could not be followed by the definition of a variable.
