@@ -71,3 +71,8 @@ Fixed the preious issues.
 The current issue seems to be the error handling, certain cases like the inclusion of "(", and ")" in expressions is marked as illegal, I will add a condition to ignore those two tokens.
 Also the unary operation did not work as intended and also threw an error defined by me which should not have been triggered.
 So the next fixed will be over error handling designed by me rather than actual syntax issues or exceptions.
+
+10/24/2025 10:48 pm
+Fixed issue with unary. Error was in the recursive call expecting a list with two elements a current element and the rest of the list.
+However when using unary for single cases like "- 5".
+I have also skipped the parenthesis notation given that the function reads prefix.
