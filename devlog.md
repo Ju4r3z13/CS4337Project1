@@ -65,3 +65,9 @@ Ran into issues while running the code:
 - Entering "quit" doesn't exit the program until it occurs twice
 - Errors in the parsing of the string
 - eval-expression had errors in syntax where a condition could not be followed by the definition of a variable.
+
+10/24/2025 10:16 pm
+Fixed the preious issues.
+The current issue seems to be the error handling, certain cases like the inclusion of "(", and ")" in expressions is marked as illegal, I will add a condition to ignore those two tokens.
+Also the unary operation did not work as intended and also threw an error defined by me which should not have been triggered.
+So the next fixed will be over error handling designed by me rather than actual syntax issues or exceptions.
