@@ -1,10 +1,10 @@
-(define prompt?
+(define prompt? 
    (let [(args (current-command-line-arguments))] 
      (cond
        [(= (vector-length args) 0) #t]
        [(string=? (vector-ref args 0) "-b") #f]
        [(string=? (vector-ref args 0) "--batch") #f]
-       [else #t])))
+       [else #t]))) ; Eduardo Juarez exj220003
          
 (define (to-token line) ; tokenizes string
     (string-split line))
